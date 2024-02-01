@@ -1,3 +1,4 @@
+
 -- Enabled Kaitun Scripts
 _G.KaitanMode = true
 -- Candy Event
