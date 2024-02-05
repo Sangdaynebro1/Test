@@ -25,7 +25,7 @@ getgenv().Configs = {
     
     AutoSecondSea = true,
     -- World 2
-    AutoRengoku = true,
+    AutoRengoku = false,
     AutoQuestFlower = true,
     AutoRaceV3 = true,
     AutoBartiloQuest = true,
