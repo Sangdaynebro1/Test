@@ -20,7 +20,7 @@ getgenv().Configs = {
     
     StartKaitun = true,
     -- World 1
-    AutoPole = true, -- จะตีเเค่ถ้ามันเกิดไม่ได้ตีจนกว่าจะได้
+    AutoPole = false, -- จะตีเเค่ถ้ามันเกิดไม่ได้ตีจนกว่าจะได้
     AutoSaber = true,
     
     AutoSecondSea = true,
@@ -36,13 +36,13 @@ getgenv().Configs = {
     SkipGetItemGuitar = false, -- จะไม่ หาของทำ soul guiter ในโลก 2 เบบ หาจนกว่าจะได้ will not find item until get all item for do soul guiter ( open recommend เเนะนำให้เปิด )
     AlliesFruit = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"}, -- จะไม่ใช้ผลพวกนี้ในการเปิดประตูไปโลก3
     -- World 3
-    AutoHallowScythe = true,
-    AutoBuddySword = true,
+    AutoHallowScythe = false,
+    AutoBuddySword = false,
     AutoDoughKing = true,
     AutoSpikeyTrident = true,
     AutoTushita = true,
     AutoEliteHunter = true,
-    AutoDarkDagger = true,
+    AutoDarkDagger = false,
     AutoYama = true,
     AutoCanvander = true,
     AutoSoulGuitar = true, 
@@ -98,7 +98,7 @@ getgenv().Configs = {
     
     LockFPS = 30,
     LockFPSNow = true,
-    WhiteScreen = false
+    WhiteScreen = true
 }
 _G.Key = "LuxuryV2_1utxltt2n5up0vrgqm79"
 _G.DiscordId = "1118845964803919893"
