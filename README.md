@@ -1,105 +1,22 @@
--- Enabled Kaitun Scripts
-_G.KaitanMode = true
--- Candy Event
-_G.CandyConfigs = {
-    ExpX2 = true,
-    Trade500Fragment = true,
-    Trade200Fragment = true
-}
-shared.Team = "Pirates"
-getgenv().Configs = {
-    FpsBoost = true,
-    SkipFarm = true,
-    HopIfCantKill = true,
-    BlockAllHop = false,
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
-    FastAttack = true,
-    NewFastAttack = true,
-    NoAttackAnimation = true,
-    
-    StartKaitun = true,
-    -- World 1
-    AutoPole = true, -- จะตีเเค่ถ้ามันเกิดไม่ได้ตีจนกว่าจะได้
-    AutoSaber = true,
-    
-    AutoSecondSea = true,
-    -- World 2
-    AutoRengoku = true,
-    AutoQuestFlower = true,
-    AutoRaceV3 = true,
-    AutoBartiloQuest = true,
-    AutoCursedCaptain = true,
-    AutoDarkbeard = true,
-    AutoFactory = true,
-    AutoThirdSea = true,
-    SkipGetItemGuitar = false, -- จะไม่ หาของทำ soul guiter ในโลก 2 เบบ หาจนกว่าจะได้ will not find item until get all item for do soul guiter ( open recommend เเนะนำให้เปิด )
-    AlliesFruit = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"}, -- จะไม่ใช้ผลพวกนี้ในการเปิดประตูไปโลก3
-    -- World 3
-    AutoHallowScythe = false,
-    AutoBuddySword = false,
-    AutoDoughKing = true,
-    AutoSpikeyTrident = true,
-    AutoTushita = true,
-    AutoEliteHunter = true,
-    AutoDarkDagger = false,
-    AutoYama = true,
-    AutoCanvander = false,
-    AutoSoulGuitar = true, 
-    AutoRainbowHaki = true,
-    AutoCursedDualKatana = true,
-    
-    -- Fighting Style 
-    
-    AutoGodHuman = true,
-    AutoSuperhuman = true,
-    AutoDeathStep = true,
-    AutoSharkmanKarate = true,
-    AutoElectricClaw = true,
-    AutoDargonTalon = true,
-    
-    AutoDFMastery = false,
-    SettingsSkill = { -- ถ้าไม่ใส่จะใช้ mode auto
-        -- ["Z"] = 0.1,
-        -- ["X"] = 0.1,
-        -- ["C"] = 0.1,
-        -- ["V"] = 0.1, -- อันไหนไม่เอาลบออกไปเลย
-    },
-    AutoSwordMastery = true,
-    SelectRaritySword = {"Mythical","Legendary"}, -- Common , Uncommon,Rare,Legendary,Mythical
-    
-    SelectRedeemCodeLevel = 1,
-    
-    -- Raids
-    
-    SelectRateFruitRaid = 880000, -- if fruit price less u rate then we use it to auto raids
-    LimitFragmentsRaids = 50000,
-    
-    -- Devil Fruit
-        
-    SelectMainDF = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"}, -- ผลหลักที่จะกินเเทนผลรอง
-    SelectSubDF = {"Ice-Ice","Sand-Sand","Dark-Dark","Quake-Quake","Light-Light"}, -- ผลรองจะกินไว้ก่อนเเล้วพอผลหลักมีก้จะเปลียนไปกินผิดหลัก
-    AllowEatDFInventory = false,
-    StartSniper = true,
-        
-    -- RAM
-    
-    RAMPort = 7963,
-    RAMPassword = "",
-    AutoDescription = false,
-    
-    -- Webhook
-    
-    StartWebhook = true,
-    WebhookURL = "",
-    WebhookSettings = "Send Every 10 min", -- "Send Every 10 min","Send On Level Max And Every 10 min"
-    
-    -- CPU
-    
-    LockFPS = 30,
-    LockFPSNow = true,
-    WhiteScreen = true
-}
-_G.Key = "LuxuryV2_1utxltt2n5up0vrgqm79"
-_G.DiscordId = "1118845964803919893"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/RoyryX/main/Loader.lua"))()
+_G.Delay_Upload = 300 -- โชว์ข้อมูลใหม่ทุกๆ 300วิ
+_G.Bypass_Tp = true -- วาปฟาร์ม
 
+_G.Select_Fruit = {
+    ['Main'] = {'Dough-Dough'}, -- เลือกผลปีศาจหลัก
+    ['Select Fruit'] = {'Dark-Dark','Human-Human: Buddha','Sand-Sand','Magma-Magma'} -- เลือกผลปีศาจ
+}
+_G.Mastery_Farm = { -- ฟามมาสเตอรี่
+    ['Melee'] = true,
+    ['Devil Fruit'] = true,
+    ['Sword'] = false,
+    ['Gun'] = false
+}
+_G.Race_Evo = {
+    ['Level'] = {1,2,3}, -- อีโวเผ่าจากขั้น0 ไปถึงขั้น3
+    ['Enabled'] = true
+}
+
+script_key="vLNcMBAeAeYUbaYbYmWQolVOVWYJMMWO";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/m.lua"))()
