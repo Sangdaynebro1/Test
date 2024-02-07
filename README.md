@@ -1,22 +1,22 @@
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+_G.Setting = {
+    ['FPS Booster'] = true,
+    ['White Screen'] = true,
+    ['Close Gui'] = true,
+    ['Rejoin'] = true,
 
-_G.Delay_Upload = 300 -- โชว์ข้อมูลใหม่ทุกๆ 300วิ
-_G.Bypass_Tp = true -- วาปฟาร์ม
+    ['Melee'] = 'Sharkman Karate',
 
-_G.Select_Fruit = {
-    ['Main'] = {'Dough-Dough'}, -- เลือกผลปีศาจหลัก
-    ['Select Fruit'] = {'Dark-Dark','Human-Human: Buddha','Sand-Sand','Magma-Magma'} -- เลือกผลปีศาจ
-}
-_G.Mastery_Farm = { -- ฟามมาสเตอรี่
-    ['Melee'] = true,
-    ['Devil Fruit'] = true,
-    ['Sword'] = false,
-    ['Gun'] = false
-}
-_G.Race_Evo = {
-    ['Level'] = {1,2,3}, -- อีโวเผ่าจากขั้น0 ไปถึงขั้น3
-    ['Enabled'] = true
-}
+    ['Farm Level'] = true,
+    ['Level Max'] = 2550,
+    ['Sword Max Level'] = {
+        ['Enabled'] = true,
+        ['Sword'] = 'Shark Anchor',
+        ['Restats'] = true
+    },
 
-script_key="vLNcMBAeAeYUbaYbYmWQolVOVWYJMMWO";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/m.lua"))()
+    ['Boat'] = 'PirateBrigade', -- เรือที่ใช้ แนะนำเรือที่เลือดเยอะๆ
+    ['Shark Anchor'] = true -- ทำสมอออโต้
+}
+script_key = "vLNcMBAeAeYUbaYbYmWQolVOVWYJMMWO";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/58328ea2259c450ea64a10414568a7dc.lua"))()
