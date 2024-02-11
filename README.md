@@ -1,22 +1,49 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-_G.Setting = {
-    ['FPS Booster'] = true,
-    ['White Screen'] = true,
-    ['Close Gui'] = true,
-    ['Rejoin'] = true,
-
-    ['Melee'] = 'Sharkman Karate',
-
-    ['Farm Level'] = true,
-    ['Level Max'] = 2550,
-    ['Sword Max Level'] = {
-        ['Enabled'] = true,
-        ['Sword'] = 'Shark Anchor',
-        ['Restats'] = true
+getgenv().DitBF = {
+    ["Performance"] = {
+        ["Hide Map"] = true,
+        ["Black Screen"] = true,
+        ["Lock FPS"] = 20,
     },
-
-    ['Boat'] = 'PirateBrigade', -- เรือที่ใช้ แนะนำเรือที่เลือดเยอะๆ
-    ['Shark Anchor'] = true -- ทำสมอออโต้
+    ["Fast Attack Duration/Cooldown"] = {2, 5},
+    ["Raid if Maxed Blox Fruit"] = true,
+    ["Farm boss drops while not maxed"] = true,
+    ["Farm Blox Fruit Mastery if maxed"] = true,
+    ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
+    ["Extra time Farm until unlock skills"] = true,
+    ["Hop Server"] = {
+        ["Type"] = {
+            ["[Main] Server Hop"] = true,
+            ["[Farm] Server Hop if Player nearby"] = false,
+            ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = true,
+        },
+        ["Delay"] = 60,
+    },
+    ["Do Action"] = {
+        ["Get Godhuman"] = true,
+        ["Get Rengoku"] = false,
+        ["Get True Triple Katana"] = true,
+        ["Get Hallow Scythe"] = true,
+        ["Get Cursed Dual Katana"] = true,
+        ["Get Soul Guitar"] = true,
+        ["Awake Current Blox Fruit"] = true,
+        ["Get Mirror Fractal"] = false,
+    },
+    ["Buy Haki"] = {
+        ["Enhancement"] = true,
+        ["Skyjump"] = true,
+        ["Flash Step"] = true,
+        ["Observation"] = true,
+        ["Legendary Enhancement"] = false,
+    },
+    ["Auto Race"] = "None",
+    ["Blox Fruit Sniper"] = {"Dough-Dough"},
+    ["Main Blox Fruit"] = {},
+    ["Eat Sniper Blox Fruits"] = true,
+    ["Account Panel"] = {
+        ["Enable"] = true,
+        ["Delay"] = 300,
+        ["Note"] = "Trinhvusang.site Bán Acc Giá Rẻ",
+    },
 }
-script_key = "vLNcMBAeAeYUbaYbYmWQolVOVWYJMMWO";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/58328ea2259c450ea64a10414568a7dc.lua"))()
+getgenv().Key = "k178dbdfb0ca05c8e7df47fe"
+repeat wait()spawn(function()loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()end)wait(60)until S_Timer`
