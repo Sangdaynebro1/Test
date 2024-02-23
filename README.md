@@ -13,7 +13,7 @@ getgenv().Setting = {
     ["Team"] = "Pirates", --Marines,Pirates
     ["Webhook"] = {
         ["Enabled"] = true,
-        ["Url Webhook"] = "https://discord.com/api/webhooks/1210581998956052570/iRmeYfPUj1FKXRY0N3as-qdAqxAakjX9JYo8z5xCMQZ36aQa7eDCn8GQnxJ0AOLRV_mk", --Your Url
+        ["Url Webhook"] = "", --Your Url
     },
     ["Misc"] = {
         ["AutoBuyRandomandStoreFruit"] = true,
@@ -34,7 +34,7 @@ getgenv().Setting = {
     ["Race V4"] = {
         ["Enable"] = true,
     },
-    ["Invisible"] = false,
+    ["Invisible"] = true,
     ["White Screen"] = true,
     ["GunMethod"] = false, --Support Only Melee And Gun,Not Invisible, Turn On Enabled Gun and Melee Please
     ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
