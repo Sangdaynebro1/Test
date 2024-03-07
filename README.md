@@ -1,119 +1,97 @@
-repeat wait()
-until game:IsLoaded()
-local TableChat = {"Banana On Top","Config By #Hkoaa"}
-spawn(function()
-    while wait() do 
-        pcall(function()
-            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TableChat[math.random(1,#TableChat)],"All")
-            wait(45)
-        end)
-    end
-end)
-getgenv().Setting = {
-    ["Team"] = "Pirates", --Marines,Pirates
-    ["Webhook"] = {
-        ["Enabled"] = true,
-        ["Url Webhook"] = "https://discord.com/api/webhooks/1210581998956052570/iRmeYfPUj1FKXRY0N3as-qdAqxAakjX9JYo8z5xCMQZ36aQa7eDCn8GQnxJ0AOLRV_mk", --Your Url
-    },
-    ["Misc"] = {
-        ["AutoBuyRandomandStoreFruit"] = true,
-        ["AutoBuySurprise"] = true,
-    },
-    ["Click"] = {
-        ["Enable"] = true,
-        ["Click Gun"] = true,
-        ["OnLowHealthDisable"] = true,
-        ["LowHealth"] = 4500,
-    },
-    ["SafeZone"] = {
-        ["Enable"] = true,
-        ["LowHealth"] = 4500,
-        ["MaxHealth"] = 5000,
-        ["Teleport Y"] = 2000
-    },
-    ["Race V4"] = {
-        ["Enable"] = true,
-    },
-    ["Invisible"] = true,
-    ["White Screen"] = true,
-    ["GunMethod"] = false, --Support Only Melee And Gun,Not Invisible, Turn On Enabled Gun and Melee Please
-    ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
-    ["Weapons"] = {
-        ["Melee"] = {
-            ["Enable"] = true,
-            ["Delay"] = 3,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0.2,
-                },
-               [ "X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
-                },
+shared.Team = "Pirates"
+getgenv().Configs = {
+    FpsBoost = true,
+    SkipFarm = true,
+    HopIfCantKill = true,
+    BlockAllHop = false,
 
-                ["C"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 2,
-                },
-            },
-        },
-        ["Blox Fruit"] = {
-            ["Enable"] = false,
-            ["Delay"] = 1,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = false,
-                    ["HoldTime"] = 0,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-
-                ["C"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-                ["V"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                },
-                ["F"] = {
-                    ["Enable"] = false,
-                    ["HoldTime"] = 0,
-                },
-            },
-        },
-        ["Gun"] = {
-            ["Enable"] = false,
-            ["Delay"] = 2,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = false,
-                    ["HoldTime"] = 0.7,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0.7,
-                },
-            },
-        },
-        ["Sword"] = {
-            ["Enable"] = true,
-            ["Delay"] = 1,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
-                },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
-                },
-            },
-        },
-    }
+    FastAttack = true,
+    NewFastAttack = true,
+    NoAttackAnimation = true,
+    
+    StartKaitun = true,
+    -- World 1
+    AutoPole = true, -- จะตีเเค่ถ้ามันเกิดไม่ได้ตีจนกว่าจะได้
+    AutoSaber = true,
+    
+    AutoSecondSea = true,
+    -- World 2
+    AutoRengoku = true,
+    AutoQuestFlower = true,
+    AutoRaceV3 = false,
+    AutoBartiloQuest = true,
+    AutoCursedCaptain = true,
+    AutoDarkbeard = true,
+    AutoFactory = true,
+    AutoThirdSea = true,
+    SkipGetItemGuitar = true, -- จะไม่ หาของทำ soul guiter ในโลก 2 เบบ หาจนกว่าจะได้ will not find item until get all item for do soul guiter ( open recommend เเนะนำให้เปิด )
+    AlliesFruit = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"}, -- จะไม่ใช้ผลพวกนี้ในการเปิดประตูไปโลก3
+    -- World 3
+    AutoHallowScythe = true,
+    AutoBuddySword = true,
+    AutoDoughKing = true,
+    AutoSpikeyTrident = true,
+    AutoTushita = true,
+    AutoEliteHunter = true,
+    AutoDarkDagger = true,
+    AutoYama = true,
+    AutoCanvander = true,
+    AutoSoulGuitar = true, 
+    AutoRainbowHaki = true,
+    AutoCursedDualKatana = true,
+    
+    -- Fighting Style 
+    
+    AutoGodHuman = true,
+    AutoSuperhuman = true,
+    AutoDeathStep = true,
+    AutoSharkmanKarate = true,
+    AutoElectricClaw = true,
+    AutoDargonTalon = true,
+    
+    AutoDFMastery = true,
+    SettingsSkill = { -- ถ้าไม่ใส่จะใช้ mode auto
+        -- ["Z"] = 0.1,
+        -- ["X"] = 0.1,
+        -- ["C"] = 0.1,
+        -- ["V"] = 0.1, -- อันไหนไม่เอาลบออกไปเลย
+    },
+    AutoSwordMastery = true,
+    SelectRaritySword = {"Mythical","Legendary"}, -- Common , Uncommon,Rare,Legendary,Mythical
+    
+    SelectRedeemCodeLevel = 1,
+    
+    -- Raids
+    
+    SelectRateFruitRaid = 1000000, -- if fruit price less u rate then we use it to auto raids
+    LimitFragmentsRaids = 100000,
+    
+    -- Devil Fruit
+        
+    SelectMainDF = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"}, -- ผลหลักที่จะกินเเทนผลรอง
+    SelectSubDF = {"Ice-Ice","Sand-Sand","Dark-Dark","Quake-Quake","Light-Light"}, -- ผลรองจะกินไว้ก่อนเเล้วพอผลหลักมีก้จะเปลียนไปกินผิดหลัก
+    AllowEatDFInventory = true,
+    StartSniper = true,
+        
+    -- RAM
+    
+    RAMPort = 7963,
+    RAMPassword = "",
+    AutoDescription = false,
+    
+    -- Webhook
+    
+    StartWebhook = true,
+    WebhookURL = "",
+    WebhookSettings = "Send Every 10 min", -- "Send Every 10 min","Send On Level Max And Every 10 min"
+    
+    -- CPU
+    
+    LockFPS = 120,
+    LockFPSNow = true,
+    WhiteScreen = true
 }
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BountyShit.lua"))()
+
+_G.Key = "PLDKC-BZ6SL-562WS"
+_G.DiscordId = "1118845964803919893"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/markxd07/LuxuryHub/main/loader.lua"))();
