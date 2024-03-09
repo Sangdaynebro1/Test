@@ -92,6 +92,6 @@ getgenv().Configs = {
     WhiteScreen = false
 }
 
-_G.Key = "PLDKC-BZ6SL-562WS"
+_G.Key = "LuxuryV2_1utxltt2n5up0vrgqm79"
 _G.DiscordId = "1118845964803919893"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/markxd07/LuxuryHub/main/loader.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/RoyryX/main/mainpack.lua"))();
