@@ -1,6 +1,6 @@
 getgenv().DitBF = {
     ["Performance"] = {
-        ["Black Screen"] = true,
+        ["Black Screen"] = false,
         ["Lock FPS"] = 30,
     },
     ["Raid if Maxed Blox Fruit"] = true,
