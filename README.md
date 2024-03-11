@@ -1,7 +1,7 @@
 getgenv().DitBF = {
     ["Performance"] = {
         ["Black Screen"] = true,
-        ["Lock FPS"] = 30,
+        ["Lock FPS"] = 20,
     },
     ["Raid if Maxed Blox Fruit"] = true,
     ["Farm boss drops while not maxed"] = false,
@@ -10,7 +10,7 @@ getgenv().DitBF = {
     ["Extra time Farm until unlock skills"] = true,
     ["Hop Server"] = {
         ["Type"] = {
-            ["[Main] Server Hop"] = true,
+            ["[Main] Server Hop"] = falee,
             ["[Farm] Server Hop if Player nearby"] = false,
             ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = true,
         },
