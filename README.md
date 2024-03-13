@@ -1,40 +1,42 @@
-getgenv().DitBF = {
-    ["Performance"] = {
-        ["Black Screen"] = true,
-        ["Lock FPS"] = 20,
+```lua
+_G.Setting = {
+    ['FPS Booster'] = true, -- ภาพ144p ช่วยลดCPU+RAM
+    ['White Screen'] = true, -- จอขาว ช่วยลดCPU+RAM
+    ['Auto Rejoin'] = true, -- รีจอย
+    ['Roblox Account Manager'] = {
+        ['Enabled'] = true,
+        ['Delay'] = 300
     },
-    ["Raid if Maxed Blox Fruit"] = true,
-    ["Farm boss drops while not maxed"] = false,
-    ["Farm Blox Fruit Mastery if maxed"] = false,
-    ["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
-    ["Extra time Farm until unlock skills"] = true,
-    ["Hop Server"] = {
-        ["Type"] = {
-            ["[Main] Server Hop"] = falee,
-            ["[Farm] Server Hop if Player nearby"] = false,
-            ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = true,
-        },
-        ["Delay"] = 60,
+
+    ['Farm Item'] = {
+        ['Godhuman'] = true, -- 👊
+        ['Cursed Dual Katana'] = true, -- ⚔️
+        ['Hallow Scythe'] = true, -- 🔪
+        ['Valkyrie Helm'] = true, -- 👑
+        ['Mirror Fractal'] = true -- 🧩
     },
-    ["Do Action"] = {
-        ["Get Godhuman"] = true,
-        ["Get Rengoku"] = false,
-        ["Get True Triple Katana"] = false,
-        ["Get Hallow Scythe"] = false,
-        ["Get Cursed Dual Katana"] = true,
-        ["Get Soul Guitar"] = false,
-        ["Awake Current Blox Fruit"] = false,
+    ['Farm Mastery'] = { -- ฟาร์มมาสเตอรี่
+        ['Melee'] = true,
+        ['Sword'] = true,
+        ['Devil Fruit'] = true,
+        ['Gun'] = true
     },
-    ["Buy Haki"] = {
-        ["Enhancement"] = false,
-        ["Skyjump"] = false,
-        ["Flash Step"] = false,
-        ["Observation"] = false,
+    ['Farm Fruit'] = {
+        ['Select Main Fruit'] = {'Dough-Dough'}, -- ผลหลัก 
+        ['Select Fruit'] = {'Dark-Dark','Magma-Magma'}, -- ผลรอง
+        ['Auto Awaken'] = true -- ทำผลตื่นออโต้ 🍎
     },
-    ["Auto Race"] = "None",
-    ["Blox Fruit Sniper"] = {},
-    ["Main Blox Fruit"] = {},
-    ["Eat Sniper Blox Fruits"] = false,
+    ['Farm Quest'] = { 
+        ['Quest Dough Awaken'] = true -- ทำโมจิตื่น 🍩
+    },
+
+    ['Mode'] = {
+        ['Bypass Tp'] = true, -- วาปฟาร์ม
+        ['Faster Farm'] = true, -- เควสลับเพิ่มความเร็วในการฟาร์ม โอกาศติด 100%
+        ['Triple Quest'] = true --รับเควส 3ระดับความเร็วการฟาร์ม Exp X3
+    }
 }
-getgenv().Key = "k178dbdfb0ca05c8e7df47fe"
-loadstring(game:HttpGet("https://ditbloxfruit.cc/client.lua"))()
+
+_G.Switch_Hub_No_1 = true -- เปิดใช้งานSwitch Hub 
+script_key = "KsUlhzoEtDEKNraxgdTCHSjSFCsBrwDq"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/sw.kaitun.lua"))()
