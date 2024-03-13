@@ -1,16 +1,39 @@
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
-_G.Setting = {
-    -- Auto Pull Lever / ดึงคันโยก
-    ['Auto Pull Lever'] = {
-        ['Enabled'] = true,
-        ['Hop Server'] = false
+-- Setting
+getgenv().Item ={
+    -- Item / ไอเทม
+    ['Godhuman'] = true,
+    ['CDK'] = true,
+    ['Soul Guitar'] = true,
+
+    -- Quest / เควส
+    ['Dough Awaken'] = true,
+    ['RGB Haki'] = true,
+
+    -- Race / เผ่า
+    ['Evo Race V3'] = true,
+    ['Select Race'] = {'Fishman'},
+
+    -- Fruit / ผลปีศาจ
+    ['Select Fruit'] = {
+        ['Main'] = {'Dough-Dough'},
+        ['Fruit'] = {'Dark-Dark','Magma-Magma'}
     },
-    -- Booster CPU
-    ['Close Ui'] = true,
-    ['White Screen'] = true, 
-    ['FPS Booster'] = true
+
+    -- Mastery / มาสเตอรี่
+    ['Mastery'] = {
+        ['Melee'] = true,
+        ['Sword'] = true,
+        ['Fruit'] = true,
+        ['Gun'] = false
+    }
 }
 
+-- CPU Booster
+_G.Bypass_Tp = true
+_G.White_Screen = true
+_G.FPS_Booster = true
+
 script_key="KsUlhzoEtDEKNraxgdTCHSjSFCsBrwDq";
-loadstring(game:HttpGet("httpgs://raw.githubusercontent.com/londnee/code/main/sw.v4.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/m.lua"))()
