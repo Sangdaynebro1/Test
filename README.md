@@ -451,7 +451,7 @@ Window:AddMinimizeButton({
 
 local Tabs = {
   Discord = Window:MakeTab({"Discord", "Info"}),
-  Facebook = Window:MakeTab({"Discord", "Info"}),
+  Facebook = Window:MakeTab({"Facebook", "Info"}),
   MainFarm = Window:MakeTab({"Farm", "Home"}),
   Items = Window:MakeTab({"Items", "Swords"}),
   Stats = Window:MakeTab({"Stats", "Signal"}),
