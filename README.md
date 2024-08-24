@@ -451,6 +451,7 @@ Window:AddMinimizeButton({
 
 local Tabs = {
   Discord = Window:MakeTab({"Discord", "Info"}),
+  Facebook = Window:MakeTab({"Discord", "Info"}),
   MainFarm = Window:MakeTab({"Farm", "Home"}),
   Items = Window:MakeTab({"Items", "Swords"}),
   Stats = Window:MakeTab({"Stats", "Signal"}),
@@ -475,6 +476,13 @@ local _Discord = Tabs.Discord do
     Description = "Join our discord community to receive information about the next update",
     Logo = "rbxassetid://17747757759",
     Invite = "https://discord.com/invite/kJH2dd8n"
+  })
+  local _Facebook = Tabs.Discord do
+  _Discord:AddDiscordInvite({
+    Name = "Facebook|Của Thằng Dev Lỏ",
+    Description = "Có Thể Thông Báo Lỗi Qua",
+    Logo = "rbxassetid://17747757759",
+    Invite = "Fb.com/advusang"
   })
 end
 
