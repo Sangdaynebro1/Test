@@ -473,8 +473,8 @@ local _Discord = Tabs.Discord do
   _Discord:AddDiscordInvite({
     Name = "VnWorld| Community",
     Description = "Join our discord community to receive information about the next update",
-    Logo = "rbxassetid://17382040552",
-    Invite = "https://discord.gg/7aR7kNVt4g"
+    Logo = "rbxassetid://17747757759",
+    Invite = "https://discord.com/invite/kJH2dd8n"
   })
 end
 
